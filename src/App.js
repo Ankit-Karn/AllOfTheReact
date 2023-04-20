@@ -1,18 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import ReactBenifit from './component/reactBenifit';
-import Button from './component/button';
-import Image from './component/image';
+import { Fragment } from 'react';
+import Invitation from './component/invitation';
+import React from 'react'
+
+const props = {
+    subject : "Birthday Party Invitation",
+    email : "jaGdish@gmail.com",
+    invitee : "jaGdish",
+    purpose : "birthday party",
+    venue : "Green field Avenue",
+    inviter : "JaGdish",
+    guest1 : "Ritu",
+    guest2 : "Saurabh",
+    guest3 : "Kartik"
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Image />
-        <ReactBenifit />
-        <Button />
-      </header>
-    </div>
+   return (
+    <Invitation {...props}/>
   );
 }
 
