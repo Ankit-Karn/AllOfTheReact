@@ -1,0 +1,17 @@
+.cardStr{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 350px;
+    height: 400px;
+    margin: 80px;
+    padding: 30px;
+    background-color: rgb(190, 183, 175);
+    box-shadow: 10px 10px 20px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+}
