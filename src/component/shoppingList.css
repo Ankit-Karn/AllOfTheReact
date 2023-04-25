@@ -1,0 +1,32 @@
+
+.card{
+    margin: 50px;
+    box-shadow: 10px 15px 100px;
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    background-color: #f6e5f0;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img{
+    width: 160px;
+    height: 170px;
+    padding-top: 40px;
+
+}
+
+.button{
+    background-color: rgb(223, 154, 129);
+    width: 350px;
+    height: 40px;
+    margin-top: 5px;
+    padding-top: 16px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
