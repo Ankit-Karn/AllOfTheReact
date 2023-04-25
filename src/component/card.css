@@ -1,11 +1,11 @@
 .cardStr{
-    border-radius: 50px;
+    border-radius: 60px;
     width: 350px;
     height: 400px;
     margin: 80px;
     padding: 30px;
-    background-color: rgb(190, 183, 175);
-    box-shadow: 10px 10px 20px;
+    background-image: linear-gradient(180deg, rgb(207, 80, 230) 0%, rgb(245, 156, 61) 35%, rgb(227, 178, 177) 100%);
+    box-shadow: 5px 5px 100px;
 }
 
 img{
