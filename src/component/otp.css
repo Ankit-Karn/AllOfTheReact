@@ -3,14 +3,18 @@
     width: 250px;
     height: 100px;
     padding: 20px;
-    border : 1px solid black;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(0deg, rgb(245, 142, 7) 0%, rgb(185, 142, 205) 100%);
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgb(177, 164, 147) 0%, rgb(239, 218, 249) 100%);
 }
 
 .btn{
     color: black;
 }
+
+body {
+    background-color: rgb(84, 208, 249);
+  }

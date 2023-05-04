@@ -22,13 +22,34 @@ export default function OTP() {
 
         const url = 'https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP';
         const data = { mobile: mobile };
-        try {
-            const response = await axios.post(url, data, { header: { 'Content-type': 'application/json' } });
-            console.log(response);
-        } catch (error) {
-            console.log("error", error)
+
+        // axios -> 
+        // try {
+        //     const response = await axios.post(url, data, { header: { 'Content-type': 'application/json' } });
+        //     console.log(response);
+        //     console.log("SUCCESS");
+        // } catch (error) {
+        //     console.log("error", error)
+        // }
+        // setMobile('')
+
+        // fetch ->
+        try{
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            const responseJson = await response.json();
+            console.log(responseJson);
+           console.log("SUCCESS");
+        }catch(error){
+            console.log("error", error);
         }
         setMobile('')
+
     }
 
     return (
