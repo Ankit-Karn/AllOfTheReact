@@ -24,29 +24,12 @@ export default function OTP() {
         const data = { mobile: mobile };
 
         // axios -> 
-        // try {
-        //     const response = await axios.post(url, data, { header: { 'Content-type': 'application/json' } });
-        //     console.log(response);
-        //     console.log("SUCCESS");
-        // } catch (error) {
-        //     console.log("error", error)
-        // }
-        // setMobile('')
-
-        // fetch ->
-        try{
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            });
-            const responseJson = await response.json();
-            console.log(responseJson);
-           console.log("SUCCESS");
-        }catch(error){
-            console.log("error", error);
+        try {
+            const response = await axios.post(url, data, { header: { 'Content-type': 'application/json' } });
+            console.log(response);
+            console.log("SUCCESS");
+        } catch (error) {
+            console.log("error", error)
         }
         setMobile('')
 
