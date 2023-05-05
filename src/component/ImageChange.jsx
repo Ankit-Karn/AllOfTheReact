@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 export default function Image(){
     
     const[image, setImage] = useState('')
 
     useEffect(()=>{
-            fetch('https://dog.ceo/api/breeds/image/random')
-                .then(response => response.json())
-                .then(data => setImage(data.message))
+            const response = axios.get('https://dog.ceo/api/breeds/image/random')
+                .then(response => setImage(response.data.message))
+                .catch(err => console.error(err))
     },[])
 
     return(
