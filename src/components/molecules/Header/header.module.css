@@ -33,6 +33,13 @@
     margin-left: 40px;
 
 }
+.nvbtn{
+    height: 4vh;
+    width: 12vh;
+    margin-top: 2vh;
+    border-radius: 10px;
+    
+  }
 .icon{
   font-size: 30px;
   color: whitesmoke;
