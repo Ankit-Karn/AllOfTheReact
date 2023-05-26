@@ -1,0 +1,30 @@
+body{
+    background: palevioletred;
+}
+
+.outer{
+    display: flex;
+}
+
+.container{
+    background: rgb(224, 183, 253);
+    width: 50vw;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 20px 20px;
+}
+
+.container p {
+    text-align: start;
+}
+
+.options div{
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
